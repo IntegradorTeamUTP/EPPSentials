@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
 </table>
 <table>
 	<tfoot style="margin-right:10%">
-<tr> <h4 align="right"> Precio Total : &#36 <?php echo isset( $overall) ? $overall : 0; ?></h4>  </tr>
+<tr> <h4 align="right"> Precio Total : S/. <?php echo isset( $overall) ? $overall : 0; ?></h4>  </tr>
 	
 </tfoot>
 </table>

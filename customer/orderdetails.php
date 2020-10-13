@@ -82,8 +82,8 @@ $singlecustomer = $customer->single_customer($customerid);
                           <td><img src="admin/products/<?php echo $result->IMAGES ?>"  width="50px" height="50px"></td>
                           <td><?php echo $result->PRODESC ; ?></td>
                           <td align="center"><?php echo $_SESSION['gcCart'][$i]['qty']; ?></td>
-                          <td>&#36 <?php echo  $result->PRODISPRICE ?></td>
-                          <td>&#36 <output><?php echo $_SESSION['gcCart'][$i]['price']?></output></td>
+                          <td>S/. <?php echo  $result->PRODISPRICE ?></td>
+                          <td>S/. <output><?php echo $_SESSION['gcCart'][$i]['price']?></output></td>
                         </tr>
               <?php
               $tot +=$_SESSION['gcCart'][$i]['price'];
@@ -99,9 +99,9 @@ $singlecustomer = $customer->single_customer($customerid);
               </table>  
                 <div class="  pull-right">
                   <p align="right">
-                  <div > Precio Total :   &#36 <span id="sum">0.00</span></div>
-                   <div > Gasto de envío : &#36 <span id="fee">0.00</span></div>
-                   <div> Importe Total : &#36 <span id="overall"><?php echo $tot ;?></span></div>
+                  <div > Precio Total :   S/. <span id="sum">0.00</span></div>
+                   <div > Gasto de envío : S/. <span id="fee">0.00</span></div>
+                   <div> Importe Total : S/. <span id="overall"><?php echo $tot ;?></span></div>
                    <input type="hidden" name="alltot" id="alltot" value="<?php echo $tot ;?>"/>
                   </p>  
                 </div>

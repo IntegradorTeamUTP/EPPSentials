@@ -79,7 +79,7 @@ check_message();
                                   <td>
                                     <input type="hidden"    id ="PROPRICE<?php echo $result->PROID;  ?>" name="PROPRICE<?php echo $result->PROID; ?>" value="<?php echo  $result->PRODISPRICE ; ?>" >
                                      
-                                  &#36  <?php echo  $result->PRODISPRICE ; ?>
+                                  S/.  <?php echo  $result->PRODISPRICE ; ?>
                                   </td>
                                   <td class="input-group custom-search-form" >
                                        <input type="hidden" maxlength="3" class="form-control input-sm"  autocomplete="off"  id ="ORIGQTY<?php echo $result->PROID;  ?>" name="ORIGQTY<?php echo $result->PROID; ?>" value="<?php echo $result->PROQTY; ?>"   placeholder="Search for...">
@@ -94,7 +94,7 @@ check_message();
                                       
                                         <input type="hidden"    id ="TOT<?php echo $result->PROID;  ?>" name="TOT<?php echo $result->PROID; ?>" value="<?php echo  $result->PRODISPRICE ; ?>" >
                                    
-                                     <td> &#36 <output id="Osubtot<?php echo $result->PROID ?>"><?php echo   $_SESSION['gcCart'][$i]['price'] ; ?></output></td>
+                                     <td> S/. <output id="Osubtot<?php echo $result->PROID ?>"><?php echo   $_SESSION['gcCart'][$i]['price'] ; ?></output></td>
                                 </tr>
          
                             <?php  
@@ -108,7 +108,7 @@ check_message();
                       </table> 
 
      
-                        <h3 align="right"> Total  &#36<span id="sum">0</span></h3> 
+                        <h3 align="right"> Total  S/.<span id="sum">0</span></h3> 
     </div>
   </div>  
  

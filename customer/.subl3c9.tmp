@@ -91,7 +91,7 @@
                
               </td>
                   <td><?php echo date_format(date_create($result->DATEORDER),"M/d/Y h:i:s") ; ?></td>
-                  <td> &#36 <?php echo  $result->TOTALPRICE; ?></td>
+                  <td> S/. <?php echo  $result->TOTALPRICE; ?></td>
                   <td><?php echo  $result->PAYMENTMETHOD; ?></td>
                   <td><?php echo  $result->STATS; ?></td>
                   <td><?php echo  $result->REMARKS; ?></td>

@@ -57,7 +57,7 @@
                             </strong>
                         </td>
                         <td class="text-primary">
-                            <?php echo ': &#36 '.$singleproduct->PROPRICE; ?> 
+                            <?php echo ': S/. '.$singleproduct->PROPRICE; ?> 
                         </td>
                     </tr>
 

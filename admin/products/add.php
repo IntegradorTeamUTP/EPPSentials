@@ -80,14 +80,14 @@
 
                       <div class="col-md-3">
                          <input class="form-control input-sm" id="ORIGINALPRICE" name="ORIGINALPRICE" placeholder=
-                            "&#36 Precio Costo" type="number" value=""  step="any">
+                            "S/. Precio Costo" type="number" value=""  step="any">
                       </div>
                        <label class="col-md-2 control-label" for=
                       "PROPRICE">PRECIO:</label>
 
                       <div class="col-md-3">
                          <input class="form-control input-sm" id="PROPRICE"  step="any" name="PROPRICE" placeholder=
-                            "&#36 Precio Venta " type="number" value="">
+                            "S/. Precio Venta " type="number" value="">
                       </div>
                     </div>
                   </div>

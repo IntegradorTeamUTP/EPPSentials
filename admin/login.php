@@ -11,7 +11,7 @@ require_once("../include/initialize.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Iniciar Sesión | MoliService El Chotano </title>
+	<title>Iniciar Sesión | Mica & CIA </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -40,11 +40,11 @@ require_once("../include/initialize.php");
 			<div class="wrap-login100">
 				<form method="post" action=""  class="login100-form validate-form" >
 					<div class="login100-form-avatar">
-						<img src="images/avicola.png" alt="AVATAR">
+						<img src="images/hazmat.png" alt="AVATAR">
 					</div>
 
 					<span class="login100-form-title p-t-20 p-b-45">
-						APPollo - MoliService El Chotano E.I.R.L.
+						EPPSentials - Mica & CIA S.A
 					</span>
 
 				 	<?php echo check_message(); ?>

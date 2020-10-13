@@ -97,12 +97,12 @@ if(isset($_GET['id'])) { //remove to cart
                                       <td></td>
                                       <td><img src="<?php echo web_root.'admin/modules/product/'.$result->IMAGES; ?>" onload="totalprice()" width="50px" height="50px"></td>
                                       <td><?php echo $result->PRODUCTNAME ?></td>
-                                      <td>&#36 <?php echo  $result->PRICE ?></td>
+                                      <td>S/. <?php echo  $result->PRICE ?></td>
                                       <td>
                                       <input type="NUMBER" data-id="<?php echo $result->PRODUCTID;  ?>" class="qty" name="QTY<?php echo $result->PRODUCTID;  ?>" id="QTY<?php echo $result->PRODUCTID; ?>"  value="<?php echo $_SESSION['fixnmix_cart'][$i]['qty'] ?>"/>
                                       </td>
                                         <td>
-                                        &#36 <output id="Osubtot<?php echo $result->PRODUCTID ?>"><?php echo   $_SESSION['fixnmix_cart'][$i]['price']; ?></output>
+                                        S/. <output id="Osubtot<?php echo $result->PRODUCTID ?>"><?php echo   $_SESSION['fixnmix_cart'][$i]['price']; ?></output>
                                         </td>
                                       <!-- hidden textbox -->
                                       <input type="hidden" name="TOT<?php echo $result->PRODUCTID;  ?>" id="TOT<?php echo $result->PRODUCTID; ?>"  value="<?php echo $_SESSION['fixnmix_cart'][$i]['price'] ?>"/> 
@@ -123,7 +123,7 @@ if(isset($_GET['id'])) { //remove to cart
                 </div>
               <table>
            <tfoot  >
-                    <div ><strong><h1 align="right" >Importe Total : &#36 <span id="sum">0</span></h1></strong></td></div> 
+                    <div ><strong><h1 align="right" >Importe Total : S/. <span id="sum">0</span></h1></strong></td></div> 
 
                               
                   </tfoot>

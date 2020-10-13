@@ -65,7 +65,7 @@ if (isset($_POST['updateid'])){
           <div class="panel-body">  
             <fieldset>  
               <legend><h2 class="text-left">Cart List</h2></legend>
-          <div>Every products has a mininum price of &#36 50.00 each to be able to order.</div>
+          <div>Every products has a mininum price of S/. 50.00 each to be able to order.</div>
       <div class="table-responsive">
        <div  class="fixnmix_scroll_carttwo" >
           <table  class="table fixnmix-table" id="table" >
@@ -101,9 +101,9 @@ if (isset($_POST['updateid'])){
                         <td></td>
                         <td><img src="<?php echo web_root.'admin/modules/product/'.$result->IMAGES; ?>"   width="50px" height="50px"></td>
                         <td><?php echo $result->PRODUCTNAME ?></td>
-                        <td>&#36 <?php echo number_format($result->PRICE,2) ?></td>
+                        <td>S/. <?php echo number_format($result->PRICE,2) ?></td>
                         <td><input type="NUMBER" data-id="<?php echo $result->PRODUCTID;  ?>" class="cusqty" name="QTY<?php echo $result->PRODUCTID;  ?>" id="QTY<?php echo $result->PRODUCTID; ?>"  value="<?php echo $_SESSION['fixnmix_cart'][$i]['qty'] ?>"/>
-                        <td>&#36 <output id="Osubtot<?php echo $result->PRODUCTID ?>"><?php echo   $_SESSION['fixnmix_cart'][$i]['price'] ; ?></output>
+                        <td>S/. <output id="Osubtot<?php echo $result->PRODUCTID ?>"><?php echo   $_SESSION['fixnmix_cart'][$i]['price'] ; ?></output>
 
                         <!-- hidden textbox -->
                         <input type="hidden" name="TOT<?php echo $result->PRODUCTID;  ?>" id="TOT<?php echo $result->PRODUCTID; ?>"  value="<?php echo $_SESSION['fixnmix_cart'][$i]['price'] ?>"/></td>
@@ -128,7 +128,7 @@ if (isset($_POST['updateid'])){
                   </div>
                   <table  >
                   <tfoot >
-                     <strong><h1 align="right">Total Price : &#36 <span style="margin-right:3%"  id="sum">0.00</span></h1></strong></td>
+                     <strong><h1 align="right">Total Price : S/. <span style="margin-right:3%"  id="sum">0.00</span></h1></strong></td>
          
                   </tfoot>
                   </table> 
@@ -207,7 +207,7 @@ if (isset($_POST['updateid'])){
                               </div>
                               </div>
                               <div class="modal-footer">
-                              <p align="left">&copy; APPOLLO</p>
+                              <p align="left">&copy; EPPSentials</p>
                               <button class="btn btn-default"   data-dismiss="modal" type=
                               "button">Close</button>  
                               <button class="btn btn_fixnmix"
@@ -407,7 +407,7 @@ if (isset($_POST['updateid'])){
                     </div>
                   </div>
  
-                  <div class="modal-footer"><p align="left">&copy; APPOLLO</p>
+                  <div class="modal-footer"><p align="left">&copy; EPPSentials</p>
                     <button class="btn btn-default" data-dismiss="modal" type=
                     "button">Cerrar</button> 
                     <button type="submit"  name="savecustomer"   class="submit btn btn_fixnmix" >Regístrate</button> 

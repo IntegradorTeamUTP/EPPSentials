@@ -44,11 +44,11 @@ require_once("include/initialize.php");
                     <ul>
                       <!-- <li>Model - <?php echo $cur->PROMODEL; ?></li> -->
                       <li>Tipo - <?php echo $cur->PRODESC; ?></li>
-                      <li>Precio - &#36 <?php echo $cur->PROPRICE; ?></li>
+                      <li>Precio - S/. <?php echo $cur->PROPRICE; ?></li>
                        <?php if($cur->PRODISCOUNT>0){ ?>
                         <li>Descuento - <?php echo $cur->PRODISCOUNT; ?> % </li> 
 
-                        <li>Precio Descuento - &#36 <?php echo $cur->PRODISPRICE; ?> </li> 
+                        <li>Precio Descuento - S/. <?php echo $cur->PRODISPRICE; ?> </li> 
                         <?php } ?>
                       <li>Cantidad disponible - <?php echo $cur->PROQTY; ?></li>
                     </ul> 

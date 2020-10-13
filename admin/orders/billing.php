@@ -81,8 +81,8 @@
                           <!-- <td><img src="<?php echo web_root.'admin/modules/product/'.$result->IMAGES; ?>" onload="totalprice()" width="50px" height="50px"></td> -->
                           <td><?php echo $result->PRODUCTNAME ?></td>
                           <td><?php echo $_SESSION['fixnmix_cart'][$i]['qty'] ?></td>
-                          <td>&#36 <?php echo  $result->PRICE ?></td>
-                          <td>&#36 <output><?php echo $_SESSION['fixnmix_cart'][$i]['price']?></output></td>
+                          <td>S/. <?php echo  $result->PRICE ?></td>
+                          <td>S/. <output><?php echo $_SESSION['fixnmix_cart'][$i]['price']?></output></td>
                         </tr>
               <?php
                         }
@@ -117,9 +117,9 @@
 
                 </div> -->
                 <div class="col-md-4 pull-right">
-                  <!-- <div>Total Price : &#36 <?php echo number_format($tot,2);?></div> -->
-                  <!-- <div>Delivery Fee : &#36 <?php echo number_format($price,2); ?></div> -->
-                  <div>Overall Price : &#36 <?php echo number_format($cur->TOTALPRICE,2); ?></div>
+                  <!-- <div>Total Price : S/. <?php echo number_format($tot,2);?></div> -->
+                  <!-- <div>Delivery Fee : S/. <?php echo number_format($price,2); ?></div> -->
+                  <div>Overall Price : S/. <?php echo number_format($cur->TOTALPRICE,2); ?></div>
                 </div>
               </div>
               <div class="row" style="margin-left:2%"> 
