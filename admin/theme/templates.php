@@ -391,5 +391,5 @@ $('#date_picker').datetimepicker({
   
   
 </body> 
-      <footer><p  style="text-align: center;font-weight: bold;">&copy; Desarrollado por: E.Y.Y.A. CorpSoftware S.A.C. </p></footer>
+      <footer><p  style="text-align: center;font-weight: bold;">&copy; Desarrollado por: WYVA CorpSoftware S.A.C </p></footer>
 </html>

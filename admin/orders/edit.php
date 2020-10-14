@@ -202,7 +202,7 @@
   
        
     <footer>
-        <p>© E.Y.Y.A. CorpSoftware S.A.C.</p>
+        <p>© WYVA CorpSoftware S.A.C</p>
     </footer>
 </div>
 <!--/.fluid-container-->
