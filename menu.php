@@ -9,10 +9,10 @@
       <div class="row">
         <div class="col-sm-3">
          <?php include 'sidebar.php'; ?>
-          </div><!--/category-productsr-->  
+          </div><!--/Categoría Producto-->  
         
         <div class="col-sm-9 padding-right">
-          <div class="features_items"><!--features_items-->
+          <div class="features_items"><!--Se muestran los productos que coincidan con el elemento de búsqueda-->
             <h2 class="title text-center">Productos</h2>
               <?php
              if(isset($_POST['search'])) { 
@@ -38,6 +38,7 @@
             foreach ($cur as $result) { 
 
               ?>
+            
             <form   method="POST" action="cart/controller.php?action=add">
             <input type="hidden" name="PROPRICE" value="<?php  echo $result->PROPRICE; ?>">
             <input type="hidden" id="PROQTY" name="PROQTY" value="<?php  echo $result->PROQTY; ?>">
