@@ -195,7 +195,7 @@
                                           "image"></label>
                                           <div class="col-md-8">
                                         <p>  Yo <input type="checkbox" id="conditionterms" name="conditionterms" value="checkbox" />
-                                           <small>Aceptos los <a class="toggle-modal"  onclick=" OpenPopupCenter('terms.php','Terms And Codition','600','600')"  ><b>Términos y Condiciones</b></a> APPollo MoliService El Chotano E.I.R.L.</small>
+                                           <small>Aceptos los <a class="toggle-modal"  onclick=" OpenPopupCenter('terms.php','Terms And Codition','600','600')"  ><b>Términos y Condiciones</b></a> EPPSentials Mica & CIA</small>
                                            
                                           </div>
                                         </div>
@@ -217,7 +217,7 @@
 
                                      </div>
                                     <div class="panel-footer">
-                                        <p align="left">&copy;APPollo - MoliService El Chotano E.I.R.L.</p>
+                                        <p align="left">&copy;EPPSentials - Mica & CIA S.A</p>
                                     </div> 
                             </div> 
                             <!-- end panel sign up -->

@@ -112,7 +112,7 @@
                                             <!-- <a href="#"  title="View list Of ordered products"  class="orderid   "  data-target="#myOrdered" data-toggle="modal" data-id="<?php echo  $result->ORDEREDNUM; ?>"><i class="fa fa-info-circle fa-fw"></i><?php echo  $result->ORDEREDNUM; ?></a> --></td>
                                             <td>
                                             <?php echo date_format(date_create($result->ORDEREDDATE),"M/d/Y h:i:s") ; ?></td>
-                                            <td>&#36
+                                            <td>S/.
                                             <?php echo  $result->PAYMENT; ?></td>
                                             <td>
                                             <?php echo  $result->PAYMENTMETHOD; ?></td>

@@ -13,4 +13,4 @@
 		suffix: [],
 		meridiem: []
 	};
-}(jQuery)); 
+}(jQuery));

@@ -36,11 +36,11 @@
                     <div class="contact-info">
                         <h2 class="title text-center">Información de Contacto</h2>
                         <address>
-                            <p>MoliService El Chotano E.I.R.L.</p>
+                            <p>Mica & CIA</p>
                             <p>Carretera a Alto Larán Km 5.5</p>
                             <p>Ica Perú</p>
                             <p>Celular: 980123456</p> 
-                            <p>Email: info@moliservicechotano.com</p>
+                            <p>Email: mica&cia@gmail.com</p>
                         </address>
                         <div class="social-networks">
                             <h2 class="title text-center">Redes Sociales</h2>

@@ -68,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                 <a class="navbar-brand"  href="<?php echo web_root; ?>admin/index.php" >Panel de Control - APPOLLO</a>
+                 <a class="navbar-brand"  href="<?php echo web_root; ?>admin/index.php" >Panel de Control - EPPSentials</a>
             </div>
             <!-- /.navbar-header -->
 
