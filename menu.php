@@ -3,7 +3,7 @@
       <img src="images/shop/banner.jpg" alt="" />
     </div>
   </section>
-  
+    
   <section>
     <div class="container">
       <div class="row">

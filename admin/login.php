@@ -48,16 +48,16 @@ require_once("../include/initialize.php");
 					</span>
 
 				 	<?php echo check_message(); ?>
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-						<input class="input100" type="text"  name="user_email"  placeholder="Username">
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Se requiere ingresar el usuario">
+						<input class="input100" type="text"  name="user_email"  placeholder="Usuario">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-						<input class="input100" type="password" name="user_pass" placeholder="Password">
+					<div class="wrap-input100 validate-input m-b-10" data-validate = "Se requiere ingresar la contraseña">
+						<input class="input100" type="password" name="user_pass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>

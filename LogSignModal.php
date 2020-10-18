@@ -32,10 +32,10 @@
                                 <div class="form-group">
                                   <div class="col-md-10">
                                     <label class="col-md-4 control-label" for=
-                                    "U_USERNAME">Username:</label>
+                                    "U_USERNAME">Usuario:</label>
                                     
                                     <div class="col-md-8">
-                                       <input   id="U_USERNAME" name="U_USERNAME" placeholder="Username" type="text" class="form-control input-sm" > 
+                                       <input   id="U_USERNAME" name="U_USERNAME" placeholder="Usuario" type="text" class="form-control input-sm" > 
                              
                                     </div>
                                   </div>
@@ -44,10 +44,10 @@
                                 <div class="form-group">
                                   <div class="col-md-10">
                                     <label class="col-md-4 control-label" for=
-                                    "U_PASS">Password:</label>
+                                    "U_PASS">Contraseña:</label>
                                     
                                     <div class="col-md-8">
-                                     <input name="U_PASS" id="U_PASS" placeholder="Password" type="password" class="form-control input-sm">
+                                     <input name="U_PASS" id="U_PASS" placeholder="Contraseña" type="password" class="form-control input-sm">
                             
                                     </div>
                                   </div>

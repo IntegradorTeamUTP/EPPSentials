@@ -25,7 +25,7 @@
                       <!-- <div class="col-md-8"> -->
                         
                          <input class="form-control input-sm" id="USERID" name="USERID" placeholder=
-                            "Account Id" type="Hidden" value="<?php echo $singleuser->USERID; ?>">
+                            "IdUsuario" type="Hidden" value="<?php echo $singleuser->USERID; ?>">
                    <!--    </div>
                     </div>
                   </div>      -->      
@@ -46,12 +46,12 @@
                   <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "U_USERNAME">Username:</label>
+                      "U_USERNAME">Usuario:</label>
 
                       <div class="col-md-8">
                         <input name="deptid" type="hidden" value="">
                          <input class="form-control input-sm" id="U_USERNAME" name="U_USERNAME" placeholder=
-                            "Email Address" type="text" value="<?php echo $singleuser->U_USERNAME; ?>">
+                            "Usuario" type="text" value="<?php echo $singleuser->U_USERNAME; ?>">
                       </div>
                     </div>
                   </div>
@@ -59,12 +59,12 @@
                   <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "U_PASS">Password:</label>
+                      "U_PASS">Contraseña:</label>
 
                       <div class="col-md-8">
                         <input name="deptid" type="hidden" value="">
                          <input class="form-control input-sm" id="U_PASS" name="U_PASS" placeholder=
-                            "Account Password" type="Password" value="" required>
+                            "Contraseña" type="Password" value="" required>
                       </div>
                     </div>
                   </div>

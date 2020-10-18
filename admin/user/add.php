@@ -43,12 +43,12 @@
                   <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "U_USERNAME">UserName:</label>
+                      "U_USERNAME">Usuario:</label>
 
                       <div class="col-md-8">
                         <input name="deptid" type="hidden" value="">
                          <input class="form-control input-sm" id="U_USERNAME" name="U_USERNAME" placeholder=
-                            "email" type="text" value="">
+                            "usuario" type="text" value="">
                       </div>
                     </div>
                   </div>

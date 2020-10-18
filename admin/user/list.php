@@ -21,8 +21,8 @@
 				  		<th>
 				  		 <!-- <input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">  -->
 				  		 Nombre de cuenta</th>
-				  		<th>Username</th>
-				  		<th>Role</th>
+				  		<th>Usuario</th>
+				  		<th>Rol</th>
 				  		<th width="10%" >Acción</th>
 				 
 				  	</tr>	

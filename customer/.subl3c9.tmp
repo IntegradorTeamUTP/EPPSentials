@@ -193,7 +193,7 @@
                           
                           <div class="col-xs-5">
                               <label for="USERNAME"><h4>User Name</h4></label>
-                              <input value="<?php echo $singleuser->USERNAME ?>" type="text" class="form-control" name="USERNAME" id="USERNAME" placeholder="Username" title="enter your username.">
+                              <input value="<?php echo $singleuser->USERNAME ?>" type="text" class="form-control" name="USERNAME" id="USERNAME" placeholder="Usuario" title="Ingrese su usuario.">
                           </div>
                       </div>
                       <div class="form-group">

@@ -198,12 +198,12 @@ if (isset($_POST['updateid'])){
                           <div class="modal-body">
                               <div class="col-md-12">
                               <div class="form-group"> 
-                              <label for="first_name">Username</label>
-                              <input   id="user_email" name="user_email" placeholder="Username" type="text" class="form-control input-sm" > 
+                              <label for="first_name">Usuario</label>
+                              <input   id="user_email" name="user_email" placeholder="Usuario" type="text" class="form-control input-sm" > 
                               </div>
                               <div class="form-group"> 
-                              <label for="first_name">Password</label>
-                              <input name="user_pass2" id="user_pass2" placeholder="Password" type="password" class="form-control">
+                              <label for="first_name">Contraseña</label>
+                              <input name="user_pass2" id="user_pass2" placeholder="Contraseña" type="password" class="form-control">
                               </div>
                               </div>
                               <div class="modal-footer">
