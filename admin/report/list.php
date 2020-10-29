@@ -70,7 +70,7 @@
  	    <div class="row">
 		  <div class="col-md-6">
 				<div class="form-group input-group"> 
-	                <label>From::</label> 
+	                <label>Desde:</label> 
 	                <input type="text" data-date="" data-date-format="yyyy-mm-dd" data-link-field="any" 
                            data-link-format="yyyy-mm-dd"
                            name="date_pickerfrom" id="date_pickerfrom"  
@@ -83,7 +83,7 @@
 				</div>
 					<div class="col-md-6">
 					<div class="form-group input-group"> 
-		                <label>To::</label> 
+		                <label>Hasta:</label> 
 		                <input type="text" data-date="" data-date-format="yyyy-mm-dd" data-link-field="any" 
                            data-link-format="yyyy-mm-dd"
                            name="date_pickerto" id="date_pickerto" 
@@ -102,7 +102,7 @@
  	    <div class="row">
 		  <div class="col-md-12">
 			 <div class="form-group input-group" style="margin-top:25px;">  
-                <button class="btn btn-primary btn-sm" name="submit" type="submit" >Search <i class="fa fa-search"></i>
+                <button class="btn btn-primary btn-sm" name="submit" type="submit" >Buscar<i class="fa fa-search"></i>
                 </button> 
             </div>
 		   </div>  
@@ -119,7 +119,7 @@
 <span id="printout">
 	<div class="col-md-12" >
 	<div class="page-header" style="text-align:center;" ><h1>Reporte de Productos en Pedidos</h1>
-		<div>Inclusive Dates: From : <?php echo isset($_POST['date_pickerfrom']) ? $_POST['date_pickerfrom'] :'';?> - To : <?php echo isset($_POST['date_pickerto']) ? $_POST['date_pickerto'] : '';?> </div>
+		<div>Fechas incluidas: Desde : <?php echo isset($_POST['date_pickerfrom']) ? $_POST['date_pickerfrom'] :'';?> - Hasta : <?php echo isset($_POST['date_pickerto']) ? $_POST['date_pickerto'] : '';?> </div>
 	</div>
 		 
 <form class="" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
@@ -189,11 +189,11 @@ AND DATE(ORDEREDDATE) <= '". date_format(date_create($_POST['date_pickerto']),'Y
 			$totQty +=$result->QTY;				 
  			$totAmount += $AMOUNT;
 								} }else{
-									echo '<tr><td colspan="7" align="center"><h2>Please Enter Then Dates</h2></td></tr>';
+									echo '<tr><td colspan="7" align="center"><h2>Porfavor, ingrese el rango de fechas</h2></td></tr>';
 								}
  
 	}else{
-			echo '<tr><td colspan="7" align="center"><h2>Please Enter Then Dates</h2></td></tr>';
+			echo '<tr><td colspan="7" align="center"><h2>Porfavor, ingrese el rango de fechas</h2></td></tr>';
 
 	}
 		 
