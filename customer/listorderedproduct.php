@@ -67,7 +67,7 @@ $query = "SELECT * FROM `tblsummary` s ,`tblcustomer` c
 		<table>
 			<tr>
 				<td align="center"> 
-				<img src="<?php echo web_root; ?>images/home/logo.png"   alt="Image">
+				<img src="<?php echo web_root; ?>images/home/LogoEPPS_small.png"   alt="Image">
         		</td> 
 			</tr>
 		</table>
