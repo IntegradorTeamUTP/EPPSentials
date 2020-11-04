@@ -4,7 +4,66 @@
       redirect(web_root."admin/index.php");
      } 
 ?>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!--
 
+-----------------------------------------
+
+-->
+
+<div class="row">
+<center>
+<h1>Reporte de Ventas por Categoría</h1>
+
+<div id="myDiv" style="width:600px;height:250px;">
+</div>
+</center>
+<script>
+
+var data = [{
+	type: 'pie',
+  	name: 'Venta por Categorias',
+	values: [
+	<?php
+	$query="SELECT ROUND((SUM(ORDEREDQTY)*PROPRICE),2) AS MONTO, CATEGORIES FROM `tblproduct` P ,`tblpromopro` PR ,`tblorder` O, `tblsummary` S ,`tblcustomer` C, tblcategory CAT WHERE P.`PROID`=PR.`PROID` AND PR.`PROID`=O.`PROID` AND O.`ORDEREDNUM`=S.`ORDEREDNUM` AND S.`CUSTOMERID`=C.`CUSTOMERID`AND P.`CATEGID` = CAT.`CATEGID` GROUP BY `CATEGORIES`";
+	$mydb->setQuery($query);
+	$cur = $mydb->loadResultList();
+	
+	foreach ($cur as $result) {
+	?>
+	<?php echo $result->MONTO?>,
+
+	<?php
+	}
+	?>
+	],
+	labels: [
+		<?php
+	$query="SELECT ROUND((SUM(ORDEREDQTY)*PROPRICE),2) AS MONTO, CATEGORIES FROM `tblproduct` P ,`tblpromopro` PR ,`tblorder` O, `tblsummary` S ,`tblcustomer` C, tblcategory CAT WHERE P.`PROID`=PR.`PROID` AND PR.`PROID`=O.`PROID` AND O.`ORDEREDNUM`=S.`ORDEREDNUM` AND S.`CUSTOMERID`=C.`CUSTOMERID`AND P.`CATEGID` = CAT.`CATEGID` GROUP BY `CATEGORIES`";
+	$mydb->setQuery($query);
+	$cur = $mydb->loadResultList();
+	
+	foreach ($cur as $result) {
+	?>
+	'<?php echo $result->CATEGORIES?>',
+
+	<?php
+	}
+	?>
+	]
+}];
+  //values: [19, 26, 55],
+  //labels: ['Residential', 'Non-Residential', 'Utility'],
+var layout = {
+  height: 600,
+  width: 700
+};
+
+Plotly.newPlot('myDiv', data, layout);
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<hr>
 <!-- <div class="row">
 <form  action="index.php" method="post">  
 	<div class="col-lg-3 col-lg-offset-3">
@@ -217,6 +276,7 @@ AND DATE(ORDEREDDATE) <= '". date_format(date_create($_POST['date_pickerto']),'Y
 		<div class="col-md-12">
 			<div class="col-md-2"> 	
 			<button onclick="tablePrint();" class="btn btn-primary"><i class="fa fa-print"></i> Imprimir Reporte</button>
+			<button onclick="location.href='reportExcel.php'" class="btn btn-primary"><i class="fa fa-print"></i> Exportar Excel</button>
  		</div>
 	  </div>
 	</div>
