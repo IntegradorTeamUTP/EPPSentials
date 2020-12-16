@@ -37,8 +37,8 @@
                         <h2 class="title text-center">Información de Contacto</h2>
                         <address>
                             <p>Mica & CIA</p>
-                            <p>Carretera a Alto Larán Km 5.5</p>
-                            <p>Ica Perú</p>
+                            <p>Av. Arequipa 361</p>
+                            <p>Lima Perú</p>
                             <p>Celular: 980123456</p> 
                             <p>Email: mica&cia@gmail.com</p>
                         </address>

@@ -1,4 +1,5 @@
 <?php
+header( 'X-Frame-Options: DENY' );
 require_once ("include/initialize.php");
 // if(isset($_SESSION['IDNO'])){
 // 	redirect(web_root.'index.php');

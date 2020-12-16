@@ -91,7 +91,7 @@
                         <input name="validatecode-submit" class="btn btn-lg btn-primary btn-block" value="Submit" type="submit">
                         <a href="index.php">Regresar al sitio.</a>
                       </div> 
-                      <input type="hidden" class="hide" name="token" id="token" value=""> 
+                      <input type="hidden" class="hide" name="token" id="token" value="R6B7hoBQd0wfG5Y6qOXHPNm4b9WKsTq6Vy6Jssxb"> 
                     </form>
     
                   </div>

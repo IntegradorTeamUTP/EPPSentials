@@ -5,7 +5,7 @@
                     <tbody>
                         <?php 
                           date_default_timezone_set('America/Lima');
-                            $query = "SELECT * FROM `tblproduct` P , `tblwishlist` W , `tblcustomer`  C , `tblpromopro` PR, `tblcategory` CT  WHERE P.`PROID`=W.`PROID` AND W.`CUSID`=C.`CUSTOMERID`  AND P.`PROID`=PR.`PROID` AND P.`CATEGID`=CT.`CATEGID` AND WISHSTATS=0 AND  `CUSTOMERID`=".$_SESSION['CUSID'] ." ORDER BY `WISHDATE` desc ";
+                            $query = "SELECT * FROM `tblproduct` P , `tblwishlist` W , `tblcustomer`  C , `tblpromopro` PR, `tblcategory` CT  WHERE P.`PROID`=W.`PROID` AND W.`CUSID`=C.`CUSTOMERID`  AND P.`PROID`=PR.`PROID` AND P.`CATEGID`=CT.`CATEGID` AND WISHSTATS=1 AND  `CUSTOMERID`=".$_SESSION['CUSID'] ." ORDER BY `WISHDATE` desc ";
                           $mydb->setQuery($query);
                           $cur = $mydb->loadResultList();
                        

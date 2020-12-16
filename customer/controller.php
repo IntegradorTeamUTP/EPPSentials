@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Lima');
 require_once ("../include/initialize.php");
-//header('X-Frame-Options: DENY');
+header('X-Frame-Options: DENY');
 $action = (isset($_GET['action']) && $_GET['action'] != '') ? $_GET['action'] : '';
 
 switch ($action) {
@@ -232,7 +232,7 @@ function doInsert(){
 		global $mydb;
 		if(isset($_GET['wishid'])){
 
-		  $query ="UPDATE `tblwishlist` SET `WISHSTATS`=1  WHERE `WISHLISTID`=" .$_GET['wishid'];
+		  $query ="UPDATE `tblwishlist` SET `WISHSTATS`=0  WHERE `WISHLISTID`=" .$_GET['wishid'];
 	      $mydb->setQuery($query);
 	      $res = $mydb->executeQuery();
 		 if (isset($res)){
@@ -263,7 +263,7 @@ function doInsert(){
 				message("El producto ya ha sido agregado a tu lista", "error"); 		 
 				redirect(web_root."index.php?q=profile"); 
 		}else{
-				$query ="INSERT INTO `tblwishlist` (`PROID`, `CUSID`, `WISHDATE`, `WISHSTATS`)  VALUES ('{$proid}','{$id}','".DATE('Y-m-d')."',0)";
+				$query ="INSERT INTO `tblwishlist` (`PROID`, `CUSID`, `WISHDATE`, `WISHSTATS`)  VALUES ('{$proid}','{$id}','".DATE('Y-m-d')."',1)";
 				$mydb->setQuery($query);
 				$mydb->executeQuery();
 			 
